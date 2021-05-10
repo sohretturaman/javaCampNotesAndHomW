@@ -1,2 +1,1 @@
-# javaCampNotesAndHomW
 ♦  ikigai 
