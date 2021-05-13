@@ -11,7 +11,7 @@ import kodlamaio.northwind.business.abstracts.ProductService;
 import kodlamaio.northwind.entites.concretes.Product;
 
 @RestController
-@RequestMapping ("/ api/products") // gelen istekleri kontrol eder
+@RequestMapping ("/api/products") // gelen istekleri kontrol eder
 
 public class ProductsController {
 	

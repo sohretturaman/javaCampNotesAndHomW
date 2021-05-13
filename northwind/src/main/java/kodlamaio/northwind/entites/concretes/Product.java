@@ -1,5 +1,4 @@
 package kodlamaio.northwind.entites.concretes;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,8 +17,8 @@ public class Product {
 	@Column ( name ="product_id")    // tabloda hangi kolona denk geldiğini belirtmek için column kullanılır 
   private int id ;
 	
-	@Column ( name =" catecory_id")
-  private int catecoryId ;
+	@Column ( name =" category_id")
+  private int categoryId ;
 	
 	@Column ( name =" product_name")
   private String productName ;
@@ -37,10 +36,10 @@ public class Product {
 	  
   }
 	
-	  public Product ( int id,int catecoryId,String productName, double unitPrice ,
+	  public Product ( int id,int categoryId,String productName, double unitPrice ,
 	  short unitsInStock, String quantitiyPerUnit) {
 		  this.id=id ; 
-		  this.catecoryId=catecoryId;
+		  this.categoryId=categoryId;
 		  this.productName = productName; 
 		  this.unitPrice =unitPrice ;
 	      this.unitsInStock = unitsInStock ; 
@@ -48,31 +47,11 @@ public class Product {
 	  
 	  }
 	
-	/*  
-	  public int getId () { return id ; } public void setId ( int id) { this.id=id
-	  ; }
-	  
-	  public int getCatecoryId () { return catecoryId ; } public void setCatecoryId
-	  ( int catecoryId) { this.catecoryId=catecoryId; }
+	
+
+
 	  
 	  
-	  public String getProductName () { return productName; } public void
-	  setProductName ( String productName) { this.productName =productName ; }
-	  
-	  public double getUnitPrice () { return unitPrice ; } public void setUnitPrice
-	  ( double unitPrice) { this.unitPrice=unitPrice ; }
-	  
-	  public short getUnitsInStock () { return unitsInStock ;
-	  
-	  } public void setUnitsInStock ( short unitsInStock) { this.unitsInStock =
-	  unitsInStock; }
-	  
-	  
-	  public String getQuantityPerUnit () { return quantityPerUnit; } public void
-	  setQuantityPerUnit( String quantityPerUnit) { this.quantityPerUnit =
-	  quantityPerUnit; }
-	  
-	  */
 	  
 	  
 	  
